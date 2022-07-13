@@ -26,7 +26,18 @@ M.debug = {
   },
   ["jbyuki/one-small-step-for-vimkind"] = {},
   ["mfussenegger/nvim-dap-python"] = { opt = true },
-  ["Pocco81/dap-buddy.nvim"] = {},
+  ["Pocco81/DAPInstall.nvim"] = {
+    cmd = { "DIInstall", "DIList" },
+    config = function()
+      local dap_install = require("dap-install")
+
+      dap_install.setup({
+        installation_path = sep_os_replacer(
+          vim.fn.stdpath("data") .. "/dapinstall/"
+        ),
+      })
+    end,
+  },
   ["mfussenegger/nvim-dap"] = {
     opt = true,
   },
