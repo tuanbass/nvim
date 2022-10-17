@@ -1,3 +1,5 @@
+vim.cmd("set shortmess-=F") -- allow print / echo to work inside autocommand and ftplugin
+
 local execute = vim.api.nvim_command
 local fn = vim.fn
 local global = require("config.core.global")

@@ -81,9 +81,9 @@ function M.init()
       },
       project = {
         base_dirs = {
-          "~/code",
-          "~/dotfiles",
-          "~/dotfiles/.config/nvim",
+          "/src",
+          -- "~/dotfiles",
+          -- "~/dotfiles/.config/nvim",
         },
         max_depth = 4,
         hidden_files = true,

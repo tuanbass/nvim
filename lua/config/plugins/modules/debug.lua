@@ -28,6 +28,7 @@ M.debug = {
   ["mfussenegger/nvim-dap-python"] = { opt = true },
   ["Pocco81/DAPInstall.nvim"] = {
     cmd = { "DIInstall", "DIList" },
+    commit ="24923c3819a450a772bb8f675926d530e829665f",
     config = function()
       local dap_install = require("dap-install")
 
